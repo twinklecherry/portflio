@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KOH JI YEONG(고지영) PORTFOLIO</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/animate.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+
+		<link rel="stylesheet" href="css/style.css" />
+
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZXJBVDf7R4JqmSpopVPoduIGWx1IwpBM"></script>
+    <script type="text/javascript" src="js/plugins.js"></script>
+
+	</head>
+	<body>
+	<div class="svg-wrap">
+      <svg width="64" height="64" viewBox="0 0 64 64">
+        <path id="arrow-left" d="M26.667 10.667q1.104 0 1.885 0.781t0.781 1.885q0 1.125-0.792 1.896l-14.104 14.104h41.563q1.104 0 1.885 0.781t0.781 1.885-0.781 1.885-1.885 0.781h-41.563l14.104 14.104q0.792 0.771 0.792 1.896 0 1.104-0.781 1.885t-1.885 0.781q-1.125 0-1.896-0.771l-18.667-18.667q-0.771-0.813-0.771-1.896t0.771-1.896l18.667-18.667q0.792-0.771 1.896-0.771z"></path>
+      </svg>
+
+      <svg width="64" height="64" viewBox="0 0 64 64">
+        <path id="arrow-right" d="M37.333 10.667q1.125 0 1.896 0.771l18.667 18.667q0.771 0.771 0.771 1.896t-0.771 1.896l-18.667 18.667q-0.771 0.771-1.896 0.771-1.146 0-1.906-0.76t-0.76-1.906q0-1.125 0.771-1.896l14.125-14.104h-41.563q-1.104 0-1.885-0.781t-0.781-1.885 0.781-1.885 1.885-0.781h41.563l-14.125-14.104q-0.771-0.771-0.771-1.896 0-1.146 0.76-1.906t1.906-0.76z"></path>
+      </svg>
+    </div>
+
+
+    <!-- MAIN CONTENT -->
+   <div class="container-fluid">
+
+    <!-- HEADER -->
+    <section id="header">
+
+      <!-- NAVIGATION -->
+      <nav class="navbar navbar-fixed-top navbar-default bottom">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+						<a class="navbar-brand" href="#header">KOH JI YEONG</a>
+          </div><!-- /.navbar-header -->
+
+          <div class="collapse navbar-collapse" id="menu">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#skills">skills</a></li>
+            </ul>
+          </div> <!-- /.navbar-collapse -->
+        </div> <!-- /.container -->
+      </nav>
+
+      <!-- SLIDER -->
+      <div class="header-slide">
+        <section>
+          <div id="loader" class="pageload-overlay" data-opening="M 0,0 0,60 80,60 80,0 z M 80,0 40,30 0,60 40,30 z">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 80 60" preserveAspectRatio="none">
+              <path d="M 0,0 0,60 80,60 80,0 Z M 80,0 80,60 0,60 0,0 Z"/>
+            </svg>
+          </div> <!-- /.pageload-overlay -->
+
+          <div class="image-slide bg-fixed">
+            <div class="overlay">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+
+                    <div class="slider-content">
+                      <h1></h1>
+                      <p>KOH JI YEONG PORTFOLIO</p>
+                    </div>
+
+                  </div> <!-- /.col-md-12 -->
+                </div> <!-- /.row -->
+              </div> <!-- /.container -->
+            </div> <!-- /.overlay -->
+          </div> <!-- /.image-slide -->
+
+          <nav class="nav-slide">
+            <a class="prev" href="#prev">
+              <span class="icon-wrap">
+                <svg class="icon" width="32" height="32" viewBox="0 0 64 64">
+                  <use xlink:href="#arrow-left">
+                </svg>
+              </span>
+              <div>
+                <span>Prev Photo</span>
+                <h3>...</h3>
+                <p>...</p>
+                <img alt="Previous thumb">
+              </div>
+            </a>
+            <a class="next" href="#next">
+              <span class="icon-wrap">
+                <svg class="icon" width="32" height="32" viewBox="0 0 64 64">
+                  <use xlink:href="#arrow-right">
+                </svg>
+              </span>
+              <div>
+                <span>Next Photo</span>
+                <h3>...</h3>
+                <p>...</p>
+                <img alt="Next thumb">
+              </div>
+            </a>
+          </nav>
+        </section>
+
+        <script type="text/javascript">
+        var dataHeader = [
+                            {
+                              bigImage :"images/slide-2.jpg",
+                              title : "개인프로젝트 | Study Room",
+                              author : "고지영"
+                            },
+                            {
+                              bigImage :"images/slide-2.jpg",
+                              title : "팀프로젝트 | ALT",
+                              author : "고지영"
+                            },
+                            {
+                              bigImage :"images/slide-3.jpg",
+                              title : "개인프로젝트 | Board",
+                              author : "고지영"
+                            }
+                        ],
+            loaderSVG = new SVGLoader(document.getElementById('loader'), {speedIn : 300, speedOut : 300, easingIn : mina.easeinout});
+            loaderSVG.show()
+        </script>
+
+      </div><!-- /.header-slide -->
+    </section>
+    <!-- HEADER END -->
+
+    <!-- ABOUT -->
+    <section id="projects" class="light">
+      <header class="title">
+        <h2>About <span>Project</span></h2>
+        <p><strong>A.L.T</strong>(Agricultural products Livestock Transaction)</p>
+        <p><strong>농축산물 직거래 쇼핑몰</strong></p>
+        <p><strong>2021.02.22. ~ 2021-03-19</strong> (31일 주말 및 공휴일포함)</p>
+        <p><strong>채팅으로 판매자와 소비자간의 상품 가격 흥정 가능</strong></p>
+        <p><strong>고지영</strong>, 김용민, 윤성환, 임정민, 정서영 (총 5명)</p>
+        <p><strong>- 공지사항</strong></p>
+        <p><strong>- 업체 마이페이지</strong></p>
+        <p><strong>- 실시간 채팅</strong></p>
+      </header>
+
+      <div class="container">
+
+        <div class="row table-row">
+          <div class="col-md-3 col-sm-6 text-center">
+            <div class="section-content">
+	            <div class="wrap animated" data-animate="fadeInDown">
+	              <div class="img-team">
+	                <img src="images/teampro_alt/포트폴리오1.jpg" alt="" style="width:400px;height:350px;">
+	              </div>
+	              <h3>index.jsp</h3>
+	              <div class="team-social">
+	                <ul class="list-inline social-list">
+	                </ul>
+	              </div>
+	            </div>
+	          </div>
+					</div>
+
+          <div class="col-sm-6">
+            <div class="section-content">
+              <div class="about-content left animated" data-animate="fadeInLeft">
+
+								<div class="about-icon"><i class="fa fa-desktop"></i></div>
+                <div class="about-detail">
+                  <h4>메인페이지</h4>
+                  <p><strong>디자인</strong></p><br>
+									<p>페이지 슬라이드 구현</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /.row table-row -->
+
+        <div class="row table-row">
+          <div class="col-md-3 col-sm-6 text-center">
+            <div class="section-content">
+	            <div class="wrap animated" data-animate="fadeInDown">
+	              <div class="img-team">
+	                <img src="images/teampro_alt/포트폴리오2.jpg" alt="" style="width:400px;height:350px;">
+	              </div>
+	              <h3>프로젝트 사진 제목</h3>
+	              <div class="team-social">
+	                <ul class="list-inline social-list">
+	                </ul>
+	              </div>
+	            </div>
+	          </div>
+					</div>
+
+          <div class="col-sm-6">
+            <div class="section-content">
+              <div class="about-content left animated" data-animate="fadeInLeft">
+
+								<div class="about-icon"><i class="fa fa-desktop"></i></div>
+                <div class="about-detail">
+                  <h4>프로젝트 제목</h4>
+                  <p>프로젝트 설명</p>
+									<p>문장 구성력 및 시각적 표현력을 갖추고자 노력하는 태도</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /.row table-row -->
+
+        <div class="row table-row">
+          <div class="col-md-3 col-sm-6 text-center">
+            <div class="section-content">
+	            <div class="wrap animated" data-animate="fadeInDown">
+	              <div class="img-team">
+	                <img src="images/teampro_alt/포트폴리오3.jpg" alt="" style="width:400px;height:350px;">
+	              </div>
+	              <h3>index.jsp</h3>
+	              <div class="team-social">
+	                <ul class="list-inline social-list">
+	                </ul>
+	              </div>
+	            </div>
+	          </div>
+					</div>
+
+          <div class="col-sm-6">
+            <div class="section-content">
+              <div class="about-content left animated" data-animate="fadeInLeft">
+
+								<div class="about-icon"><i class="fa fa-desktop"></i></div>
+                <div class="about-detail">
+                  <h4>메인페이지</h4>
+                  <p><strong>디자인</strong></p><br>
+									<p>페이지 슬라이드 구현</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /.row table-row -->
+
+
+        <div class="row table-row">
+          <div class="col-md-3 col-sm-6 text-center">
+            <div class="section-content">
+              <div class="wrap animated" data-animate="fadeInDown">
+                <div class="img-team">
+                  <img src="images/teampro_alt/포트폴리오4.jpg" alt="" style="width:400px;height:350px;">
+                </div>
+                <h3>index.jsp</h3>
+                <div class="team-social">
+                  <ul class="list-inline social-list">
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="section-content">
+              <div class="about-content left animated" data-animate="fadeInLeft">
+
+                <div class="about-icon"><i class="fa fa-desktop"></i></div>
+                <div class="about-detail">
+                  <h4>메인페이지</h4>
+                  <p><strong>디자인</strong></p><br>
+                  <p>페이지 슬라이드 구현</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /.row table-row -->
+
+
+        <div class="row table-row">
+          <div class="col-md-3 col-sm-6 text-center">
+            <div class="section-content">
+              <div class="wrap animated" data-animate="fadeInDown">
+                <div class="img-team">
+                  <img src="images/teampro_alt/포트폴리오5.jpg" alt="" style="width:400px;height:350px;">
+                </div>
+                <h3>index.jsp</h3>
+                <div class="team-social">
+                  <ul class="list-inline social-list">
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="section-content">
+              <div class="about-content left animated" data-animate="fadeInLeft">
+
+                <div class="about-icon"><i class="fa fa-desktop"></i></div>
+                <div class="about-detail">
+                  <h4>메인페이지</h4>
+                  <p><strong>디자인</strong></p><br>
+                  <p>페이지 슬라이드 구현</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /.row table-row -->
+
+
+        <div class="row table-row">
+          <div class="col-md-3 col-sm-6 text-center">
+            <div class="section-content">
+              <div class="wrap animated" data-animate="fadeInDown">
+                <div class="img-team">
+                  <img src="images/teampro_alt/공지사항list.jpg" alt="" style="width:400px;height:350px;">
+                </div>
+                <h3>index.jsp</h3>
+                <div class="team-social">
+                  <ul class="list-inline social-list">
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="section-content">
+              <div class="about-content left animated" data-animate="fadeInLeft">
+
+                <div class="about-icon"><i class="fa fa-desktop"></i></div>
+                <div class="about-detail">
+                  <h4>메인페이지</h4>
+                  <p><strong>디자인</strong></p><br>
+                  <p>페이지 슬라이드 구현</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /.row table-row -->
+
+
+        <div class="row table-row">
+          <div class="col-md-3 col-sm-6 text-center">
+            <div class="section-content">
+              <div class="wrap animated" data-animate="fadeInDown">
+                <div class="img-team">
+                  <img src="images/teampro_alt/공지사항list_admin.jpg" alt="" style="width:400px;height:350px;">
+                </div>
+                <h3>index.jsp</h3>
+                <div class="team-social">
+                  <ul class="list-inline social-list">
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="section-content">
+              <div class="about-content left animated" data-animate="fadeInLeft">
+
+                <div class="about-icon"><i class="fa fa-desktop"></i></div>
+                <div class="about-detail">
+                  <h4>메인페이지</h4>
+                  <p><strong>디자인</strong></p><br>
+                  <p>페이지 슬라이드 구현</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /.row table-row -->
+
+        <div class="row table-row">
+          <div class="col-md-3 col-sm-6 text-center">
+            <div class="section-content">
+              <div class="wrap animated" data-animate="fadeInDown">
+                <div class="img-team">
+                  <img src="images/teampro_alt/공지사항_register.jpg" alt="" style="width:400px;height:350px;">
+                </div>
+                <h3>index.jsp</h3>
+                <div class="team-social">
+                  <ul class="list-inline social-list">
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="section-content">
+              <div class="about-content left animated" data-animate="fadeInLeft">
+
+                <div class="about-icon"><i class="fa fa-desktop"></i></div>
+                <div class="about-detail">
+                  <h4>메인페이지</h4>
+                  <p><strong>디자인</strong></p><br>
+                  <p>페이지 슬라이드 구현</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /.row table-row -->
+
+        <div class="row table-row">
+          <div class="col-md-3 col-sm-6 text-center">
+            <div class="section-content">
+              <div class="wrap animated" data-animate="fadeInDown">
+                <div class="img-team">
+                  <img src="images/teampro_alt/공지사항_get.jpg" alt="" style="width:400px;height:350px;">
+                </div>
+                <h3>index.jsp</h3>
+                <div class="team-social">
+                  <ul class="list-inline social-list">
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="section-content">
+              <div class="about-content left animated" data-animate="fadeInLeft">
+
+                <div class="about-icon"><i class="fa fa-desktop"></i></div>
+                <div class="about-detail">
+                  <h4>메인페이지</h4>
+                  <p><strong>디자인</strong></p><br>
+                  <p>페이지 슬라이드 구현</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /.row table-row -->
+
+        <div class="row table-row">
+          <div class="col-md-3 col-sm-6 text-center">
+            <div class="section-content">
+              <div class="wrap animated" data-animate="fadeInDown">
+                <div class="img-team">
+                  <img src="images/teampro_alt/공지사항_modify.jpg" alt="" style="width:400px;height:350px;">
+                </div>
+                <h3>index.jsp</h3>
+                <div class="team-social">
+                  <ul class="list-inline social-list">
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="section-content">
+              <div class="about-content left animated" data-animate="fadeInLeft">
+
+                <div class="about-icon"><i class="fa fa-desktop"></i></div>
+                <div class="about-detail">
+                  <h4>메인페이지</h4>
+                  <p><strong>디자인</strong></p><br>
+                  <p>페이지 슬라이드 구현</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /.row table-row -->
+
+        <div class="row table-row">
+          <div class="col-md-3 col-sm-6 text-center">
+            <div class="section-content">
+              <div class="wrap animated" data-animate="fadeInDown">
+                <div class="img-team">
+                  <img src="images/teampro_alt/채팅연결.jpg" alt="" style="width:400px;height:350px;">
+                </div>
+                <h3>index.jsp</h3>
+                <div class="team-social">
+                  <ul class="list-inline social-list">
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="section-content">
+              <div class="about-content left animated" data-animate="fadeInLeft">
+
+                <div class="about-icon"><i class="fa fa-desktop"></i></div>
+                <div class="about-detail">
+                  <h4>메인페이지</h4>
+                  <p><strong>디자인</strong></p><br>
+                  <p>페이지 슬라이드 구현</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /.row table-row -->
+
+        <div class="row table-row">
+          <div class="col-md-3 col-sm-6 text-center">
+            <div class="section-content">
+              <div class="wrap animated" data-animate="fadeInDown">
+                <div class="img-team">
+                  <img src="images/teampro_alt/채팅_chat.jpg" alt="" style="width:400px;height:350px;">
+                </div>
+                <h3>index.jsp</h3>
+                <div class="team-social">
+                  <ul class="list-inline social-list">
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="section-content">
+              <div class="about-content left animated" data-animate="fadeInLeft">
+
+                <div class="about-icon"><i class="fa fa-desktop"></i></div>
+                <div class="about-detail">
+                  <h4>메인페이지</h4>
+                  <p><strong>디자인</strong></p><br>
+                  <p>페이지 슬라이드 구현</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /.row table-row -->
+
+        <div class="row table-row">
+          <div class="col-md-3 col-sm-6 text-center">
+            <div class="section-content">
+              <div class="wrap animated" data-animate="fadeInDown">
+                <div class="img-team">
+                  <img src="images/teampro_alt/채팅_room.jpg" alt="" style="width:400px;height:350px;">
+                </div>
+                <h3>index.jsp</h3>
+                <div class="team-social">
+                  <ul class="list-inline social-list">
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="section-content">
+              <div class="about-content left animated" data-animate="fadeInLeft">
+
+                <div class="about-icon"><i class="fa fa-desktop"></i></div>
+                <div class="about-detail">
+                  <h4>메인페이지</h4>
+                  <p><strong>디자인</strong></p><br>
+                  <p>페이지 슬라이드 구현</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /.row table-row -->
+
+      </div> <!-- /.container -->
+    </section>
+
+    <section id="skills" class="separator blue">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="counter animated" data-animate="fadeInUp" data-delay="0">
+              <div class="counter-icon">
+                <i class="fa fa-group"></i>
+              </div>
+              <div class="counter-content">
+                <span>Java</span><br>
+                <small>Java</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="counter animated" data-animate="fadeInUp" data-delay="500">
+              <div class="counter-icon">
+                <i class="fa fa-leaf"></i>
+              </div>
+              <div class="counter-content">
+                <span>Oracle</span><br>
+                <small>Oracle 기술 뭐 사용했는지 서술</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="counter animated" data-animate="fadeInUp" data-delay="1000">
+              <div class="counter-icon">
+                <i class="fa fa-gears"></i>
+              </div>
+              <div class="counter-content">
+                <span>Javascript</span><br>
+                <small>Javascript</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="counter animated" data-animate="fadeInUp" data-delay="1500">
+              <div class="counter-icon">
+                <i class="fa fa-css3"></i>
+              </div>
+              <div class="counter-content">
+                <span>css</span><br>
+                <small>css</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="counter animated" data-animate="fadeInUp" data-delay="1500">
+              <div class="counter-icon">
+                <i class="fa fa-html5"></i>
+              </div>
+              <div class="counter-content">
+                <span>html</span><br>
+                <small>html</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="counter animated" data-animate="fadeInUp" data-delay="1500">
+              <div class="counter-icon">
+                <i class="fa fa-inbox"></i>
+              </div>
+              <div class="counter-content">
+                <span>jsp</span><br>
+                <small>jsp</small>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="counter animated" data-animate="fadeInUp" data-delay="1500">
+              <div class="counter-icon">
+                <i class="fa fa-inbox"></i>
+              </div>
+              <div class="counter-content">
+                <span>Spring</span><br>
+                <small>Spring</small>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>Made BY Koh Ji Yeong</p>
+            <p><a href="http://twinklecherry.github.io"><small><i class="fa fa-heart"></i>고지영 포트폴리오<i class="fa fa-heart"></i></small></a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   </div><!-- /.container-fluid -->
+
+    <!-- SCRIPT -->
+    <script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
