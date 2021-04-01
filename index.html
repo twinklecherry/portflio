@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KOH JI YEONG(고지영) PORTFOLIO</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/animate.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+
+		<link rel="stylesheet" href="css/style.css" />
+
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZXJBVDf7R4JqmSpopVPoduIGWx1IwpBM"></script>
+    <script type="text/javascript" src="js/plugins.js"></script>
+
+	</head>
+	<body>
+	<div class="svg-wrap">
+      <svg width="64" height="64" viewBox="0 0 64 64">
+        <path id="arrow-left" d="M26.667 10.667q1.104 0 1.885 0.781t0.781 1.885q0 1.125-0.792 1.896l-14.104 14.104h41.563q1.104 0 1.885 0.781t0.781 1.885-0.781 1.885-1.885 0.781h-41.563l14.104 14.104q0.792 0.771 0.792 1.896 0 1.104-0.781 1.885t-1.885 0.781q-1.125 0-1.896-0.771l-18.667-18.667q-0.771-0.813-0.771-1.896t0.771-1.896l18.667-18.667q0.792-0.771 1.896-0.771z"></path>
+      </svg>
+
+      <svg width="64" height="64" viewBox="0 0 64 64">
+        <path id="arrow-right" d="M37.333 10.667q1.125 0 1.896 0.771l18.667 18.667q0.771 0.771 0.771 1.896t-0.771 1.896l-18.667 18.667q-0.771 0.771-1.896 0.771-1.146 0-1.906-0.76t-0.76-1.906q0-1.125 0.771-1.896l14.125-14.104h-41.563q-1.104 0-1.885-0.781t-0.781-1.885 0.781-1.885 1.885-0.781h41.563l-14.125-14.104q-0.771-0.771-0.771-1.896 0-1.146 0.76-1.906t1.906-0.76z"></path>
+      </svg>
+    </div>
+
+
+    <!-- MAIN CONTENT -->
+   <div class="container-fluid">
+
+    <!-- HEADER -->
+    <section id="header">
+
+      <!-- NAVIGATION -->
+      <nav class="navbar navbar-fixed-top navbar-default bottom">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+						<a class="navbar-brand" href="#header">KOH JI YEONG</a>
+          </div><!-- /.navbar-header -->
+
+          <div class="collapse navbar-collapse" id="menu">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#header">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#portfolio">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div> <!-- /.navbar-collapse -->
+        </div> <!-- /.container -->
+      </nav>
+
+      <!-- SLIDER -->
+      <div class="header-slide">
+        <section>
+          <div id="loader" class="pageload-overlay" data-opening="M 0,0 0,60 80,60 80,0 z M 80,0 40,30 0,60 40,30 z">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 80 60" preserveAspectRatio="none">
+              <path d="M 0,0 0,60 80,60 80,0 Z M 80,0 80,60 0,60 0,0 Z"/>
+            </svg>
+          </div> <!-- /.pageload-overlay -->
+
+          <div class="image-slide bg-fixed">
+            <div class="overlay">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+
+                    <div class="slider-content">
+                      <h1></h1>
+                      <p>KOH JI YEONG PORTFOLIO</p>
+                    </div>
+
+                  </div> <!-- /.col-md-12 -->
+                </div> <!-- /.row -->
+              </div> <!-- /.container -->
+            </div> <!-- /.overlay -->
+          </div> <!-- /.image-slide -->
+
+          <nav class="nav-slide">
+            <a class="prev" href="#prev">
+              <span class="icon-wrap">
+                <svg class="icon" width="32" height="32" viewBox="0 0 64 64">
+                  <use xlink:href="#arrow-left">
+                </svg>
+              </span>
+              <div>
+                <span>Prev Photo</span>
+                <h3>...</h3>
+                <p>...</p>
+                <img alt="Previous thumb">
+              </div>
+            </a>
+            <a class="next" href="#next">
+              <span class="icon-wrap">
+                <svg class="icon" width="32" height="32" viewBox="0 0 64 64">
+                  <use xlink:href="#arrow-right">
+                </svg>
+              </span>
+              <div>
+                <span>Next Photo</span>
+                <h3>...</h3>
+                <p>...</p>
+                <img alt="Next thumb">
+              </div>
+            </a>
+          </nav>
+        </section>
+
+        <script type="text/javascript">
+        var dataHeader = [
+                            {
+                              bigImage :"images/slide-2.jpg",
+                              title : "I'm A Creative Theme",
+                              author : "Templatestock"
+                            },
+                            {
+                              bigImage :"images/slide-3.jpg",
+                              title : "안녕하세요. 신입 웹 개발자 고지영 포트폴리오입니다.",
+                              author : "고지영"
+                            }
+                        ],
+            loaderSVG = new SVGLoader(document.getElementById('loader'), {speedIn : 600, speedOut : 600, easingIn : mina.easeinout});
+            loaderSVG.show()
+        </script>
+
+      </div><!-- /.header-slide -->
+    </section>
+    <!-- HEADER END -->
+
+    <!-- ABOUT -->
+    <section id="about" class="light">
+      <header class="title">
+        <h2>About <span>ME</span></h2>
+        <p>- 알지 못했던 지식을 계속해서 <strong>습득</strong>하는 것에 대한 희열감을 느낍니다.
+					<br>- 다른 사람들과 <strong>협업</strong>하는 것에 두려움이 없습니다.
+					<br>- 어려운 내용을 <strong>쉽고 간결하게</strong> 내용 전달을 잘합니다.</p>
+      </header>
+
+      <div class="container">
+        <div class="row table-row">
+			          <div class="col-md-3 col-sm-6 text-center">
+			            <div class="section-content">
+				            <div class="wrap animated" data-animate="fadeInDown">
+				              <div class="img-team">
+				                <img src="images/profile.jpg" alt="" class="img-circle" style="width:250px;height:310px;">
+				              </div>
+				              <h3>고지영</h3>
+				              <h5>신입 · 웹프로그래머</h5>
+				              <div class="team-social">
+				                <ul class="list-inline social-list">
+				                  <li><a href="https://blog.naver.com/rhwldud0202" class="fa fa-blog fa-2x">Blog</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				                  &nbsp;<li><a href="https://github.com/twinklecherry"><img src="css\GitHub-Mark-32px.png"></a></li>
+				                </ul>
+				              </div>
+				            </div>
+				          </div>
+								</div>
+
+          <div class="col-sm-6">
+            <div class="section-content">
+              <div class="about-content left animated" data-animate="fadeInLeft">
+
+								<div class="about-icon"><i class="fa fa-desktop"></i></div>
+                <div class="about-detail">
+                  <h4>Creative</h4>
+                  <p>최신 트렌드에 밝음</p>
+									<p>문장 구성력 및 시각적 표현력을 갖추고자 노력하는 태도</p>
+                </div>
+              </div>
+
+              <div class="about-content left animated" data-animate="fadeInLeft">
+                <div class="about-icon"><i class="fa fa-code"></i></div>
+                <div class="about-detail">
+                  <h4>Enthusiastic</h4>
+                  <p>각종 정보 수집에 대한 적극성</p>
+									<p>정확성과 완전성을 기해 성공적인 개발을 위한 의지</p>
+									<p>이미 작성된 코드를 분석하기 위한 치밀함</p>
+              	</div>
+							</div>
+
+              <div class="about-content left animated" data-animate="fadeInLeft">
+                <div class="about-icon"><i class="fa fa-handshake"></i></div>
+                <div class="about-detail">
+                  <h4>Cooperative</h4>
+                  <p>개발 팀원 간의 원활한 협업</p>
+									<p>주변 사람들과 함께 성장하는 사람</p>
+									<p>코드 검토 결과를 수용하고 반영하려는 태도</p>
+                </div>
+          		</div>
+
+            </div>
+          </div>
+        </div> <!-- /.row table-row -->
+      </div> <!-- /.container -->
+    </section>
+
+
+	    <!-- PORTFOLIO -->
+    <section id="portfolio" class="light">
+      <header class="title">
+        <h2>Portfolio</h2>
+        <p>프로젝트 간략한 소개 및 설명
+				 맡은 동작에 대해서 구현방법에 대한 의문이나 구현은 했는데 예외가 발생한다에 대한 내용
+				 그리고 그걸 해결 하기 위해 시도한 방법과 과정과 해결유무
+				 그 과정 속에서 본인이 얻게 된 것을 어필</p>
+      </header>
+
+      <div class="container-fluid">
+        <div class="row">
+          <ul id="filters" class="list-inline">
+            <li data-filter="all" class="filter">All</li>
+            <li data-filter=".branding" class="filter">개인프로젝트</li>
+            <li data-filter=".graphic" class="filter">팀프로젝트</li>
+          </ul>
+        </div>
+
+        <div class="row">
+          <div class="container-portfolio">
+            <!-- PORTFOLIO OBJECT -->
+            <script type="text/javascript">
+            var portfolio = [
+                    {
+                      category : "branding",
+                      image : "images/p-1.png",
+                      title : "Charming <span>Roxy</span>",
+                      link : "#none",
+                      text : "Lorem ipsum Dolor in minim fugiat ut nisi occaecat fugiat. Lorem ipsum Quis tempor Ut enim officia deserunt consectetur."
+                    },
+                    {
+                      category : "graphic",
+                      image : "images/p-2.png",
+                      title : "Fresh <span>Bubba</span>",
+                      link : "#none",
+                      text : "Lorem ipsum Dolor in minim fugiat ut nisi occaecat fugiat. Lorem ipsum Quis tempor Ut enim officia deserunt consectetur."
+                    },
+                    {
+                      category : "graphic",
+                      image : "images/p-3.png",
+                      title : "Wild <span>Romeo</span>",
+                      link : "#none",
+                      text : "Lorem ipsum Dolor in minim fugiat ut nisi occaecat fugiat. Lorem ipsum Quis tempor Ut enim officia deserunt consectetur."
+                    },
+                    {
+                      category : "branding",
+                      image : "images/p-5.png",
+                      title : "Free <span>Sarah</span>",
+                      link : "#none",
+                      text : "Lorem ipsum Dolor in minim fugiat ut nisi occaecat fugiat. Lorem ipsum Quis tempor Ut enim officia deserunt consectetur."
+                    }
+                ];
+            </script>
+          </div>
+        </div>
+      </div>
+    </section>
+
+	    <!-- INFO -->
+    <section id="info" class="dark">
+      <header class="title">
+        <h2>My <span>Skills</span></h2>
+        <p>설명사항작성</p>
+      </header>
+
+      <div class="container experties">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="skill">
+              <ul class="skill-bar list-unstyled">
+                <li><span class="percentage" data-value="80%"></span><em>Java</em>
+										<br>&nbsp;자바를 어떻게 구현할 수 있는지 자세히 기술
+								</li>
+								<br>
+                <li><span class="percentage" data-value="65%"></span><em>Python</em>
+										<br>&nbsp;자바를 어떻게 구현할 수 있는지 자세히 기술
+								</li>
+								<br>
+                <li><span class="percentage" data-value="80%"></span><em>Oracle</em>
+										<br>&nbsp;자바를 어떻게 구현할 수 있는지 자세히 기술
+								</li>
+								<br>
+								<li><span class="percentage" data-value="80%"></span><em>Javascript</em>
+										<br>&nbsp;자바를 어떻게 구현할 수 있는지 자세히 기술
+								</li>
+								<br>
+								<li><span class="percentage" data-value="75%"></span><em>jQuery</em>
+										<br>&nbsp;자바를 어떻게 구현할 수 있는지 자세히 기술
+								</li>
+								<br>
+								<li><span class="percentage" data-value="85%"></span><em>css/html</em>
+										<br>&nbsp;자바를 어떻게 구현할 수 있는지 자세히 기술
+								</li>
+								<br>
+								<li><span class="percentage" data-value="75%"></span><em>jsp</em>
+										<br>&nbsp;자바를 어떻게 구현할 수 있는지 자세히 기술
+								</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="skill">
+              <ul class="skill-bar list-unstyled">
+                <li><span class="percentage" data-value="95%"></span><em>Excel</em></li>
+                <li><span class="percentage" data-value="90%"></span><em>Access</em></li>
+                <li><span class="percentage" data-value="95%"></span><em>Word</em></li>
+								<li><span class="percentage" data-value="90%"></span><em>PowerPoint</em></li>
+								<li><span class="percentage" data-value="85%"></span><em>Photoshop</em></li>
+								<li><span class="percentage" data-value="95%"></span><em>한글</em></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div> <!-- /.container -->
+    </section>
+
+    <section class="separator blue">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="counter animated" data-animate="fadeInUp" data-delay="0">
+              <div class="counter-icon">
+                <i class="fa fa-group"></i>
+              </div>
+              <div class="counter-content">
+                <span class="value" data-from="0" data-to="43"></span>
+                <small>Clients</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="counter animated" data-animate="fadeInUp" data-delay="500">
+              <div class="counter-icon">
+                <i class="fa fa-leaf"></i>
+              </div>
+              <div class="counter-content">
+                <span class="value" data-from="0" data-to="20"></span>
+                <small>Awards</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="counter animated" data-animate="fadeInUp" data-delay="1000">
+              <div class="counter-icon">
+                <i class="fa fa-gears"></i>
+              </div>
+              <div class="counter-content">
+                <span class="value" data-from="0" data-to="34"></span>
+                <small>Projects</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="counter animated" data-animate="fadeInUp" data-delay="1500">
+              <div class="counter-icon">
+                <i class="fa fa-inbox"></i>
+              </div>
+              <div class="counter-content">
+                <span class="value" data-from="0" data-to="1298"></span>
+                <small>Mail</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER CONTACT -->
+     <section id="contact" class="dark">
+      <header class="title">
+        <h2>Contact <span>ME</span></h2>
+        <p>저의 포트폴리오가 마음에 드셨다면, 언제든 연락주세요!</p>
+      </header>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 animated" data-animate="fadeInLeft">
+            <form action="#">
+              <div class="row">
+                <div class="col-md-6">
+                  <input type="text" class="form-control" placeholder="성함">
+                </div>
+                <div class="col-md-6">
+                  <input type="email" class="form-control" placeholder="받으실 이메일">
+                </div>
+                <div class="col-md-12">
+                  <textarea class="form-control" rows="3" placeholder="저에게 하실 말씀"></textarea>
+                </div>
+                <div class="col-md-12">
+                  <button class="btn btn-default submit">메일 보내기</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-md-4 animated" data-animate="fadeInRight">
+            <address>
+                <span><i class="fa fa-phone fa-lg"></i> (010) 5159 - 9522</span>
+                <span><i class="fa fa-envelope fa-lg"></i> <a href="mailto:jy952234@gmail.com">jy952234@gmail.com</a></span>
+            </address>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>Made BY Koh Ji Yeong</p>
+            <p><small><i class="fa fa-heart"></i>고지영 포트폴리오<i class="fa fa-heart"></i></small></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   </div><!-- /.container-fluid -->
+
+    <!-- SCRIPT -->
+    <script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
